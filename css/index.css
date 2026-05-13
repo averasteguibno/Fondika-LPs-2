@@ -1,0 +1,405 @@
+@import "tailwindcss";
+
+@theme {
+  --font-sans: "Manrope", ui-sans-serif, system-ui, sans-serif;
+  --color-brand: #E86A10;
+  --color-brand-light: #F09030;
+  --color-brand-dark: #D9600B;
+}
+
+:root {
+  --font-sans: "Manrope", ui-sans-serif, system-ui, sans-serif;
+  --color-brand: #E86A10;
+  --color-brand-light: #F09030;
+  --color-brand-dark: #D9600B;
+}
+
+* {
+  box-sizing: border-box;
+}
+
+html {
+  scroll-behavior: smooth;
+}
+
+body {
+  background: linear-gradient(135deg, var(--color-brand-light) 0%, var(--color-brand) 40%, var(--color-brand-dark) 100%);
+  color: white;
+  font-family: var(--font-sans);
+  overflow-x: hidden;
+}
+
+/* ─── Brand gradients ─── */
+.bg-brand-gradient {
+  background: linear-gradient(135deg, #F09030 0%, #E86A10 40%, #D9600B 100%);
+}
+
+.bg-brand-gradient-dark {
+  background: linear-gradient(135deg, #E86A10 0%, #D9600B 60%, #C85508 100%);
+}
+
+/* ─── Grain texture overlay ─── */
+.grain::after {
+  content: "";
+  position: absolute;
+  inset: 0;
+  pointer-events: none;
+  opacity: 0.035;
+  background-image: url("data:image/svg+xml,%3Csvg viewBox='0 0 256 256' xmlns='http://www.w3.org/2000/svg'%3E%3Cfilter id='noise'%3E%3CfeTurbulence type='fractalNoise' baseFrequency='0.65' numOctaves='3' stitchTiles='stitch'/%3E%3C/filter%3E%3Crect width='100%25' height='100%25' filter='url(%23noise)'/%3E%3C/svg%3E");
+  background-repeat: repeat;
+  background-size: 256px 256px;
+  z-index: 1;
+}
+
+.grain>* {
+  position: relative;
+  z-index: 2;
+}
+
+/* ─── Animated Gradient Border ─── */
+@keyframes gradient-rotate {
+  0% { --gradient-angle: 0deg; }
+  100% { --gradient-angle: 360deg; }
+}
+
+@property --gradient-angle {
+  syntax: "<angle>";
+  initial-value: 0deg;
+  inherits: false;
+}
+
+.card-gradient-border {
+  position: relative;
+  border: none !important;
+  z-index: 0;
+  transition: box-shadow 0.4s ease;
+  isolation: isolate;
+}
+
+.card-gradient-border::before {
+  content: '';
+  position: absolute;
+  inset: -4px;
+  border-radius: 1.7rem;
+  background: conic-gradient(
+    from var(--gradient-angle),
+    #E86A10, #f5a623, #ff6b00, #E86A10, #f5a623, #E86A10
+  );
+  z-index: -2;
+  animation: gradient-rotate 3s linear infinite;
+}
+
+.card-gradient-border::after {
+  content: '';
+  position: absolute;
+  inset: 0;
+  border-radius: 1.5rem;
+  background: white;
+  z-index: -1;
+}
+
+.card-gradient-border:hover {
+  box-shadow: 0 0 30px rgba(232, 106, 16, 0.3), 0 0 60px rgba(232, 106, 16, 0.1);
+}
+
+/* ─── Marquee ─── */
+@keyframes marquee {
+  0% { transform: translateX(0); }
+  100% { transform: translateX(-50%); }
+}
+
+.animate-marquee {
+  animation: marquee 30s linear infinite;
+}
+
+/* ─── Focus states ─── */
+input:focus,
+select:focus {
+  outline: 2px solid var(--color-brand);
+  outline-offset: -2px;
+}
+
+/* ─── HubSpot Form Text Color Overrides ─── */
+.hubspot-form-wrapper label,
+.hubspot-form-wrapper .hs-form-field > label,
+.hubspot-form-wrapper .hs-field-desc,
+.hubspot-form-wrapper .legal-consent-container,
+.hubspot-form-wrapper .hs-richtext,
+.hubspot-form-wrapper .hs-error-msgs label,
+.hubspot-form-wrapper p,
+.hubspot-form-wrapper span:not(.hs-button) {
+  color: #333 !important;
+}
+.hubspot-form-wrapper input,
+.hubspot-form-wrapper select,
+.hubspot-form-wrapper textarea {
+  color: #333 !important;
+}
+
+/* ─── CTA Pill ─── */
+.cta-pill {
+  display: inline-flex;
+  align-items: center;
+  gap: 0.75rem;
+  background: white;
+  color: var(--color-brand);
+  font-weight: 800;
+  font-size: 1.125rem;
+  padding: 1rem 2.5rem;
+  border-radius: 999px;
+  transition: transform 0.3s cubic-bezier(0.16, 1, 0.3, 1), box-shadow 0.3s;
+  box-shadow: 0 4px 24px rgba(0, 0, 0, 0.12);
+  cursor: pointer;
+  border: none;
+}
+
+.cta-pill:hover {
+  transform: scale(1.04);
+  box-shadow: 0 8px 40px rgba(0, 0, 0, 0.18);
+}
+
+/* ═══════════════ SCOREBOARD ═══════════════ */
+.scoreboard-container {
+  max-width: 560px;
+  width: 100%;
+}
+
+.scoreboard-inner {
+  background: linear-gradient(180deg, #2a1a0e 0%, #1a0f06 100%);
+  border: 3px solid #4a2a10;
+  border-radius: 1rem;
+  overflow: hidden;
+  box-shadow: 0 0 60px rgba(232, 106, 16, 0.3), inset 0 1px 0 rgba(255,255,255,0.05);
+}
+
+.scoreboard-top {
+  background: linear-gradient(90deg, #E86A10, #F09030, #E86A10);
+  padding: 0.5rem 1rem;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 0.75rem;
+}
+
+.scoreboard-label {
+  font-size: 0.7rem;
+  font-weight: 800;
+  text-transform: uppercase;
+  letter-spacing: 0.3em;
+  color: white;
+}
+
+.scoreboard-led {
+  width: 6px;
+  height: 6px;
+  border-radius: 50%;
+  background: #00ff88;
+  box-shadow: 0 0 8px #00ff88;
+  animation: led-blink 2s ease-in-out infinite;
+}
+
+@keyframes led-blink {
+  0%, 100% { opacity: 1; }
+  50% { opacity: 0.4; }
+}
+
+.scoreboard-teams {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding: 1.5rem 2rem;
+  gap: 1.5rem;
+}
+
+.scoreboard-team {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 0.5rem;
+  flex: 1;
+}
+
+.scoreboard-team-name {
+  font-size: 0.75rem;
+  font-weight: 700;
+  text-transform: uppercase;
+  color: rgba(255,255,255,0.6);
+  letter-spacing: 0.15em;
+  text-align: center;
+}
+
+.scoreboard-score {
+  font-size: 4rem;
+  font-weight: 800;
+  color: #FFCC00;
+  text-shadow: 0 0 20px rgba(255, 204, 0, 0.5);
+  line-height: 1;
+  font-variant-numeric: tabular-nums;
+}
+
+.scoreboard-divider {
+  font-size: 2rem;
+  color: rgba(255,255,255,0.3);
+  font-weight: 300;
+}
+
+/* ═══════════════ QUIZ CARD ═══════════════ */
+.quiz-card {
+  background: linear-gradient(135deg, #2a1a0e 0%, #3a1e08 50%, #4a2510 100%);
+  border-radius: 1.5rem;
+  border: 1px solid rgba(232, 106, 16, 0.15);
+  position: relative;
+  box-shadow: 0 25px 80px rgba(0, 0, 0, 0.5);
+}
+
+.quiz-option {
+  display: flex;
+  align-items: center;
+  gap: 0.75rem;
+  width: 100%;
+  padding: 1rem 1.25rem;
+  background: rgba(255,255,255,0.06);
+  border: 1px solid rgba(255,255,255,0.08);
+  border-radius: 0.75rem;
+  color: white;
+  font-weight: 600;
+  font-size: 1rem;
+  text-align: left;
+  cursor: pointer;
+  transition: all 0.25s cubic-bezier(0.16, 1, 0.3, 1);
+}
+
+.quiz-option:hover {
+  background: rgba(232, 106, 16, 0.25);
+  border-color: rgba(232, 106, 16, 0.5);
+  transform: translateX(6px);
+}
+
+.quiz-option:active {
+  transform: translateX(6px) scale(0.98);
+}
+
+/* ═══════════════ MUNDIAL TABLE ═══════════════ */
+.mundial-table {
+  background: rgba(255,255,255,0.05);
+  border-radius: 1rem;
+  overflow: hidden;
+  border: 1px solid rgba(255,255,255,0.08);
+}
+
+.mundial-table-header {
+  display: flex;
+  justify-content: space-between;
+  padding: 0.75rem 1.25rem;
+  background: rgba(232, 106, 16, 0.3);
+  font-size: 0.75rem;
+  font-weight: 800;
+  text-transform: uppercase;
+  letter-spacing: 0.15em;
+  color: rgba(255,255,255,0.8);
+}
+
+.mundial-table-row {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 0.85rem 1.25rem;
+  color: white;
+  font-size: 0.95rem;
+  border-top: 1px solid rgba(255,255,255,0.05);
+  transition: background 0.2s;
+}
+
+.mundial-table-row:hover {
+  background: rgba(255,255,255,0.03);
+}
+
+.mundial-table-row-active {
+  background: rgba(232, 106, 16, 0.2) !important;
+  border-left: 4px solid #E86A10;
+}
+
+/* ═══════════════ SIMULATOR INPUT ═══════════════ */
+.sim-input {
+  width: 100%;
+  padding: 0.85rem 1.25rem;
+  background: rgba(255,255,255,0.08);
+  border: 1px solid rgba(255,255,255,0.12);
+  border-radius: 0.75rem;
+  color: white;
+  font-size: 1.125rem;
+  font-weight: 700;
+  font-family: inherit;
+  transition: border-color 0.2s;
+}
+
+.sim-input:focus {
+  border-color: #E86A10;
+  outline: none;
+  background: rgba(255,255,255,0.12);
+}
+
+.sim-input::placeholder {
+  color: rgba(255,255,255,0.3);
+}
+
+/* ─── Mundial table in white sections ─── */
+.bg-white .mundial-table,
+section:has(.text-\[\#E86A10\]) .mundial-table-preview .mundial-table {
+  background: #f5f5f5;
+  border: 1px solid #e0e0e0;
+}
+
+.bg-white .mundial-table-header {
+  background: #E86A10;
+  color: white;
+}
+
+.bg-white .mundial-table-row {
+  color: #333;
+  border-top-color: #e0e0e0;
+}
+
+.bg-white .mundial-table-row:hover {
+  background: #f0f0f0;
+}
+
+.bg-white .mundial-table-row-active {
+  background: rgba(232, 106, 16, 0.1) !important;
+  border-left: 4px solid #E86A10;
+}
+
+/* ─── Responsive scoreboard ─── */
+@media (max-width: 480px) {
+  .scoreboard-score {
+    font-size: 2.5rem;
+  }
+  
+  .scoreboard-teams {
+    padding: 1rem;
+    gap: 0.75rem;
+  }
+
+  .scoreboard-team-name {
+    font-size: 0.65rem;
+  }
+}
+
+/* ─── Confetti animation for results ─── */
+@keyframes confetti-fall {
+  0% { transform: translateY(-100vh) rotate(0deg); opacity: 1; }
+  100% { transform: translateY(100vh) rotate(720deg); opacity: 0; }
+}
+
+/* ─── Smooth number counter ─── */
+@keyframes count-up {
+  from { opacity: 0; transform: translateY(20px); }
+  to { opacity: 1; transform: translateY(0); }
+}
+/* ─── HubSpot Form Iframe Styling ─── */
+.hubspot-form-wrapper iframe {
+  width: 100% !important;
+  min-height: 560px !important;
+  border: none !important;
+  background: transparent !important;
+}

@@ -1,0 +1,1356 @@
+<!doctype html>
+<html lang="es">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>FÓNDIKA - Landing Pages</title>
+    <!-- Tailwind CSS (CDN for lean setup) -->
+    <script src="https://unpkg.com/@tailwindcss/browser@4"></script>
+    <link rel="stylesheet" href="css/index.css" />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Manrope:wght@300;400;500;600;700;800&display=swap"
+      rel="stylesheet"
+    />
+    <script src="js/main.js" defer></script>
+  </head>
+  <body>
+    <div id="root">
+      <div
+        class="min-h-screen bg-brand-gradient text-white selection:bg-white selection:text-[#E86A10] overflow-x-hidden pt-20"
+      >
+        <nav
+          class="fixed top-0 left-0 w-full px-6 md:px-20 py-4 md:py-6 z-50 text-white bg-[#E86A10]/95 backdrop-blur-lg border-b border-white/10"
+        >
+          <div
+            class="max-w-7xl mx-auto flex justify-between items-center w-full"
+          >
+            <a
+              href="https://www.fondika.com.mx/"
+              target="_blank"
+              rel="noopener noreferrer"
+              class="shrink-0"
+              ><img
+                alt="Fóndika"
+                class="h-7 md:h-9 w-auto object-contain hover:opacity-80 transition-opacity cursor-pointer"
+                src="images/fondika-logo-white.png"
+            /></a>
+            <div class="hidden md:flex gap-10 items-center">
+              <a
+                href="#registro"
+                class="bg-white text-[#E86A10] px-6 py-2.5 rounded-full font-extrabold text-xs uppercase tracking-wider hover:bg-[#111] hover:text-white transition-all shadow-lg hover:shadow-xl transform hover:-translate-y-0.5"
+                >Invertir ahora</a
+              >
+            </div>
+            <a
+              href="#registro"
+              class="md:hidden bg-white text-[#E86A10] px-5 py-2 rounded-full font-extrabold text-xs uppercase tracking-wider hover:bg-[#111] hover:text-white transition-all shadow-lg"
+              >Invertir ahora</a
+            >
+          </div>
+        </nav>
+        <section
+          class="min-h-[90vh] flex flex-col justify-center px-6 md:px-12 lg:px-20 py-20 relative grain"
+        >
+          <div
+            class="max-w-5xl mx-auto w-full flex flex-col items-center text-center z-10 pt-10"
+          >
+            <div class="mb-6">
+              <span
+                class="inline-block bg-white/15 border border-white/25 text-white text-sm font-bold uppercase tracking-widest px-5 py-2 rounded-full backdrop-blur-sm"
+                >Webinar en vivo · Educación patrimonial</span
+              >
+            </div>
+            <div class="overflow-hidden pb-4 -mb-4">
+              <div
+                class="text-5xl md:text-6xl lg:text-7xl font-extrabold tracking-tighter leading-[1.05] text-white drop-shadow-md"
+              >
+                Cómo armar una estrategia patrimonial sin ser experto en
+                finanzas
+              </div>
+            </div>
+            <div
+              class="mt-6 text-xl lg:text-2xl font-medium opacity-90 max-w-3xl"
+            >
+              Descubre cómo ordenar tu patrimonio con más claridad, lógica y
+              estrategia, sin complicarte con tecnicismos ni tener que volverte
+              experto en inversiones.
+            </div>
+            <div class="mt-10 flex flex-wrap justify-center gap-5">
+              <div
+                class="flex items-center gap-2.5 bg-white/15 border border-white/20 backdrop-blur-sm rounded-full px-5 py-2.5 text-sm font-bold"
+              >
+                <svg
+                  xmlns="http://www.w3.org/2000/svg"
+                  width="24"
+                  height="24"
+                  viewBox="0 0 24 24"
+                  fill="none"
+                  stroke="currentColor"
+                  stroke-width="2"
+                  stroke-linecap="round"
+                  stroke-linejoin="round"
+                  class="lucide lucide-calendar w-4 h-4 shrink-0"
+                  aria-hidden="true"
+                >
+                  <path d="M8 2v4"></path>
+                  <path d="M16 2v4"></path>
+                  <rect width="18" height="18" x="3" y="4" rx="2"></rect>
+                  <path d="M3 10h18"></path></svg
+                >23 de junio
+              </div>
+              <div
+                class="flex items-center gap-2.5 bg-white/15 border border-white/20 backdrop-blur-sm rounded-full px-5 py-2.5 text-sm font-bold"
+              >
+                <svg
+                  xmlns="http://www.w3.org/2000/svg"
+                  width="24"
+                  height="24"
+                  viewBox="0 0 24 24"
+                  fill="none"
+                  stroke="currentColor"
+                  stroke-width="2"
+                  stroke-linecap="round"
+                  stroke-linejoin="round"
+                  class="lucide lucide-clock w-4 h-4 shrink-0"
+                  aria-hidden="true"
+                >
+                  <path d="M12 6v6l4 2"></path>
+                  <circle cx="12" cy="12" r="10"></circle></svg
+                >Hora por confirmar
+              </div>
+              <div
+                class="flex items-center gap-2.5 bg-white/15 border border-white/20 backdrop-blur-sm rounded-full px-5 py-2.5 text-sm font-bold"
+              >
+                <svg
+                  xmlns="http://www.w3.org/2000/svg"
+                  width="24"
+                  height="24"
+                  viewBox="0 0 24 24"
+                  fill="none"
+                  stroke="currentColor"
+                  stroke-width="2"
+                  stroke-linecap="round"
+                  stroke-linejoin="round"
+                  class="lucide lucide-monitor w-4 h-4 shrink-0"
+                  aria-hidden="true"
+                >
+                  <rect width="20" height="14" x="2" y="3" rx="2"></rect>
+                  <line x1="8" x2="16" y1="21" y2="21"></line>
+                  <line x1="12" x2="12" y1="17" y2="21"></line></svg
+                >Online · En vivo
+              </div>
+              <div
+                class="flex items-center gap-2.5 bg-white/15 border border-white/20 backdrop-blur-sm rounded-full px-5 py-2.5 text-sm font-bold"
+              >
+                <svg
+                  xmlns="http://www.w3.org/2000/svg"
+                  width="24"
+                  height="24"
+                  viewBox="0 0 24 24"
+                  fill="none"
+                  stroke="currentColor"
+                  stroke-width="2"
+                  stroke-linecap="round"
+                  stroke-linejoin="round"
+                  class="lucide lucide-timer w-4 h-4 shrink-0"
+                  aria-hidden="true"
+                >
+                  <line x1="10" x2="14" y1="2" y2="2"></line>
+                  <line x1="12" x2="15" y1="14" y2="11"></line>
+                  <circle cx="12" cy="14" r="8"></circle></svg
+                >Duración por confirmar
+              </div>
+            </div>
+            <div class="mt-10 flex flex-col items-center gap-2">
+              <p class="text-sm font-bold uppercase tracking-widest opacity-60">
+                Ponente
+              </p>
+              <p class="text-2xl font-extrabold">Juan Carlos Pelayo</p>
+              <p class="text-base font-medium opacity-80">CEO de Fóndika</p>
+            </div>
+            <div class="mt-10">
+              <a href="#registro" class="cta-pill text-xl"
+                >Aparta tu lugar<svg
+                  xmlns="http://www.w3.org/2000/svg"
+                  width="24"
+                  height="24"
+                  viewBox="0 0 24 24"
+                  fill="none"
+                  stroke="currentColor"
+                  stroke-width="2"
+                  stroke-linecap="round"
+                  stroke-linejoin="round"
+                  class="lucide lucide-arrow-right w-6 h-6"
+                  aria-hidden="true"
+                >
+                  <path d="M5 12h14"></path>
+                  <path d="m12 5 7 7-7 7"></path></svg
+              ></a>
+            </div>
+          </div>
+        </section>
+        <section
+          class="bg-white text-[#333] px-6 md:px-12 lg:px-20 py-24 md:py-32 overflow-hidden"
+        >
+          <div
+            class="max-w-7xl mx-auto flex flex-col lg:flex-row gap-16 items-start"
+          >
+            <div class="flex-1 min-w-0">
+              <div class="overflow-hidden pb-4 -mb-4">
+                <div
+                  class="font-extrabold text-4xl md:text-6xl tracking-tighter text-[#E86A10] leading-tight mb-6"
+                >
+                  Tener dinero distribuido no siempre significa tener estrategia
+                </div>
+              </div>
+              <div
+                class="text-xl text-[#555] font-medium leading-relaxed mb-12"
+              >
+                Muchas personas ahorran, invierten "por partes" o tienen varios
+                productos financieros, pero eso no necesariamente significa que
+                estén construyendo un patrimonio con dirección.
+              </div>
+              <div class="grid grid-cols-1 md:grid-cols-2 gap-4">
+                <div
+                  class="bg-white rounded-2xl shadow-md border border-[#f0f0f0] p-6 flex flex-row items-start gap-4 hover:-translate-y-1 hover:shadow-xl transition-all duration-300"
+                >
+                  <div
+                    class="w-11 h-11 rounded-xl bg-[#E86A10]/10 flex items-center justify-center shrink-0 mt-0.5"
+                  >
+                    <svg
+                      xmlns="http://www.w3.org/2000/svg"
+                      width="24"
+                      height="24"
+                      viewBox="0 0 24 24"
+                      fill="none"
+                      stroke="currentColor"
+                      stroke-width="1.8"
+                      stroke-linecap="round"
+                      stroke-linejoin="round"
+                      class="lucide lucide-circle-question-mark w-5 h-5 text-[#E86A10]"
+                      aria-hidden="true"
+                    >
+                      <circle cx="12" cy="12" r="10"></circle>
+                      <path d="M9.09 9a3 3 0 0 1 5.83 1c0 2-3 3-3 3"></path>
+                      <path d="M12 17h.01"></path>
+                    </svg>
+                  </div>
+                  <p class="text-sm font-medium text-[#444] leading-relaxed">
+                    Tienes dinero ahorrado o invertido, pero no sabes si
+                    realmente está trabajando con lógica.
+                  </p>
+                </div>
+                <div
+                  class="bg-white rounded-2xl shadow-md border border-[#f0f0f0] p-6 flex flex-row items-start gap-4 hover:-translate-y-1 hover:shadow-xl transition-all duration-300"
+                >
+                  <div
+                    class="w-11 h-11 rounded-xl bg-[#E86A10]/10 flex items-center justify-center shrink-0 mt-0.5"
+                  >
+                    <svg
+                      xmlns="http://www.w3.org/2000/svg"
+                      width="24"
+                      height="24"
+                      viewBox="0 0 24 24"
+                      fill="none"
+                      stroke="currentColor"
+                      stroke-width="1.8"
+                      stroke-linecap="round"
+                      stroke-linejoin="round"
+                      class="lucide lucide-layers w-5 h-5 text-[#E86A10]"
+                      aria-hidden="true"
+                    >
+                      <path
+                        d="M12.83 2.18a2 2 0 0 0-1.66 0L2.6 6.08a1 1 0 0 0 0 1.83l8.58 3.91a2 2 0 0 0 1.66 0l8.58-3.9a1 1 0 0 0 0-1.83z"
+                      ></path>
+                      <path
+                        d="M2 12a1 1 0 0 0 .58.91l8.6 3.91a2 2 0 0 0 1.65 0l8.58-3.9A1 1 0 0 0 22 12"
+                      ></path>
+                      <path
+                        d="M2 17a1 1 0 0 0 .58.91l8.6 3.91a2 2 0 0 0 1.65 0l8.58-3.9A1 1 0 0 0 22 17"
+                      ></path>
+                    </svg>
+                  </div>
+                  <p class="text-sm font-medium text-[#444] leading-relaxed">
+                    Has abierto distintos productos financieros, pero sin una
+                    estrategia que los conecte.
+                  </p>
+                </div>
+                <div
+                  class="bg-white rounded-2xl shadow-md border border-[#f0f0f0] p-6 flex flex-row items-start gap-4 hover:-translate-y-1 hover:shadow-xl transition-all duration-300"
+                >
+                  <div
+                    class="w-11 h-11 rounded-xl bg-[#E86A10]/10 flex items-center justify-center shrink-0 mt-0.5"
+                  >
+                    <svg
+                      xmlns="http://www.w3.org/2000/svg"
+                      width="24"
+                      height="24"
+                      viewBox="0 0 24 24"
+                      fill="none"
+                      stroke="currentColor"
+                      stroke-width="1.8"
+                      stroke-linecap="round"
+                      stroke-linejoin="round"
+                      class="lucide lucide-brain w-5 h-5 text-[#E86A10]"
+                      aria-hidden="true"
+                    >
+                      <path d="M12 18V5"></path>
+                      <path
+                        d="M15 13a4.17 4.17 0 0 1-3-4 4.17 4.17 0 0 1-3 4"
+                      ></path>
+                      <path
+                        d="M17.598 6.5A3 3 0 1 0 12 5a3 3 0 1 0-5.598 1.5"
+                      ></path>
+                      <path d="M17.997 5.125a4 4 0 0 1 2.526 5.77"></path>
+                      <path d="M18 18a4 4 0 0 0 2-7.464"></path>
+                      <path
+                        d="M19.967 17.483A4 4 0 1 1 12 18a4 4 0 1 1-7.967-.517"
+                      ></path>
+                      <path d="M6 18a4 4 0 0 1-2-7.464"></path>
+                      <path d="M6.003 5.125a4 4 0 0 0-2.526 5.77"></path>
+                    </svg>
+                  </div>
+                  <p class="text-sm font-medium text-[#444] leading-relaxed">
+                    Quieres tomar mejores decisiones, pero tanta información
+                    solo te confunde más.
+                  </p>
+                </div>
+                <div
+                  class="bg-white rounded-2xl shadow-md border border-[#f0f0f0] p-6 flex flex-row items-start gap-4 hover:-translate-y-1 hover:shadow-xl transition-all duration-300"
+                >
+                  <div
+                    class="w-11 h-11 rounded-xl bg-[#E86A10]/10 flex items-center justify-center shrink-0 mt-0.5"
+                  >
+                    <svg
+                      xmlns="http://www.w3.org/2000/svg"
+                      width="24"
+                      height="24"
+                      viewBox="0 0 24 24"
+                      fill="none"
+                      stroke="currentColor"
+                      stroke-width="1.8"
+                      stroke-linecap="round"
+                      stroke-linejoin="round"
+                      class="lucide lucide-triangle-alert w-5 h-5 text-[#E86A10]"
+                      aria-hidden="true"
+                    >
+                      <path
+                        d="m21.73 18-8-14a2 2 0 0 0-3.48 0l-8 14A2 2 0 0 0 4 21h16a2 2 0 0 0 1.73-3"
+                      ></path>
+                      <path d="M12 9v4"></path>
+                      <path d="M12 17h.01"></path>
+                    </svg>
+                  </div>
+                  <p class="text-sm font-medium text-[#444] leading-relaxed">
+                    Te preocupa equivocarte por no ser experto en finanzas.
+                  </p>
+                </div>
+                <div
+                  class="bg-white rounded-2xl shadow-md border border-[#f0f0f0] p-6 flex flex-row items-start gap-4 hover:-translate-y-1 hover:shadow-xl transition-all duration-300"
+                >
+                  <div
+                    class="w-11 h-11 rounded-xl bg-[#E86A10]/10 flex items-center justify-center shrink-0 mt-0.5"
+                  >
+                    <svg
+                      xmlns="http://www.w3.org/2000/svg"
+                      width="24"
+                      height="24"
+                      viewBox="0 0 24 24"
+                      fill="none"
+                      stroke="currentColor"
+                      stroke-width="1.8"
+                      stroke-linecap="round"
+                      stroke-linejoin="round"
+                      class="lucide lucide-repeat w-5 h-5 text-[#E86A10]"
+                      aria-hidden="true"
+                    >
+                      <path d="m17 2 4 4-4 4"></path>
+                      <path d="M3 11v-1a4 4 0 0 1 4-4h14"></path>
+                      <path d="m7 22-4-4 4-4"></path>
+                      <path d="M21 13v1a4 4 0 0 1-4 4H3"></path>
+                    </svg>
+                  </div>
+                  <p class="text-sm font-medium text-[#444] leading-relaxed">
+                    Sigues haciendo lo tradicional porque parece lo más fácil,
+                    aunque sabes que podría haber una forma más inteligente.
+                  </p>
+                </div>
+              </div>
+            </div>
+            <div class="lg:w-[400px] xl:w-[460px] shrink-0 self-stretch">
+              <div
+                class="sticky top-28 rounded-3xl overflow-hidden shadow-2xl h-[600px] lg:h-full min-h-[500px]"
+              >
+                <img
+                  alt="Ejecutivo reflexionando sobre su estrategia patrimonial"
+                  class="w-full h-full object-cover object-center"
+                  src="images/webinar-executive.png"
+                />
+              </div>
+            </div>
+          </div>
+        </section>
+        <section
+          class="bg-brand-gradient px-6 md:px-12 lg:px-20 py-24 md:py-32 relative grain"
+        >
+          <div class="max-w-4xl mx-auto text-center">
+            <div class="overflow-hidden pb-4 -mb-4">
+              <div
+                class="font-extrabold text-4xl md:text-6xl lg:text-7xl tracking-tighter leading-[1.1]"
+              >
+                En este webinar vas a entender cómo darle estructura a tu
+                patrimonio sin enredos
+              </div>
+            </div>
+            <div
+              class="mt-8 text-xl md:text-2xl font-medium opacity-90 max-w-3xl mx-auto"
+            >
+              No se trata de saberlo todo. Se trata de entender qué sí importa
+              para construir una estrategia patrimonial clara, alineada a tus
+              metas y con sentido para tu realidad.
+            </div>
+            <div class="mt-16 flex flex-wrap justify-center gap-4 text-left">
+              <div
+                class="flex items-start gap-4 bg-white/10 border border-white/15 backdrop-blur-sm rounded-2xl px-6 py-5 w-full md:w-[calc(50%-0.5rem)]"
+              >
+                <svg
+                  xmlns="http://www.w3.org/2000/svg"
+                  width="24"
+                  height="24"
+                  viewBox="0 0 24 24"
+                  fill="none"
+                  stroke="currentColor"
+                  stroke-width="2"
+                  stroke-linecap="round"
+                  stroke-linejoin="round"
+                  class="lucide lucide-circle-check w-5 h-5 text-white shrink-0 mt-0.5"
+                  aria-hidden="true"
+                >
+                  <circle cx="12" cy="12" r="10"></circle>
+                  <path d="m9 12 2 2 4-4"></path>
+                </svg>
+                <p class="text-base font-medium">
+                  Entender por qué ahorrar o invertir por separado no siempre
+                  resuelve el fondo del problema.
+                </p>
+              </div>
+              <div
+                class="flex items-start gap-4 bg-white/10 border border-white/15 backdrop-blur-sm rounded-2xl px-6 py-5 w-full md:w-[calc(50%-0.5rem)]"
+              >
+                <svg
+                  xmlns="http://www.w3.org/2000/svg"
+                  width="24"
+                  height="24"
+                  viewBox="0 0 24 24"
+                  fill="none"
+                  stroke="currentColor"
+                  stroke-width="2"
+                  stroke-linecap="round"
+                  stroke-linejoin="round"
+                  class="lucide lucide-circle-check w-5 h-5 text-white shrink-0 mt-0.5"
+                  aria-hidden="true"
+                >
+                  <circle cx="12" cy="12" r="10"></circle>
+                  <path d="m9 12 2 2 4-4"></path>
+                </svg>
+                <p class="text-base font-medium">
+                  Identificar qué hace que varios productos financieros sí
+                  formen parte de una estrategia real.
+                </p>
+              </div>
+              <div
+                class="flex items-start gap-4 bg-white/10 border border-white/15 backdrop-blur-sm rounded-2xl px-6 py-5 w-full md:w-[calc(50%-0.5rem)]"
+              >
+                <svg
+                  xmlns="http://www.w3.org/2000/svg"
+                  width="24"
+                  height="24"
+                  viewBox="0 0 24 24"
+                  fill="none"
+                  stroke="currentColor"
+                  stroke-width="2"
+                  stroke-linecap="round"
+                  stroke-linejoin="round"
+                  class="lucide lucide-circle-check w-5 h-5 text-white shrink-0 mt-0.5"
+                  aria-hidden="true"
+                >
+                  <circle cx="12" cy="12" r="10"></circle>
+                  <path d="m9 12 2 2 4-4"></path>
+                </svg>
+                <p class="text-base font-medium">
+                  Aprender las bases para tomar decisiones patrimoniales con más
+                  claridad.
+                </p>
+              </div>
+              <div
+                class="flex items-start gap-4 bg-white/10 border border-white/15 backdrop-blur-sm rounded-2xl px-6 py-5 w-full md:w-[calc(50%-0.5rem)]"
+              >
+                <svg
+                  xmlns="http://www.w3.org/2000/svg"
+                  width="24"
+                  height="24"
+                  viewBox="0 0 24 24"
+                  fill="none"
+                  stroke="currentColor"
+                  stroke-width="2"
+                  stroke-linecap="round"
+                  stroke-linejoin="round"
+                  class="lucide lucide-circle-check w-5 h-5 text-white shrink-0 mt-0.5"
+                  aria-hidden="true"
+                >
+                  <circle cx="12" cy="12" r="10"></circle>
+                  <path d="m9 12 2 2 4-4"></path>
+                </svg>
+                <p class="text-base font-medium">
+                  Ver cómo una estrategia bien armada parte de tus objetivos, tu
+                  perfil y tu horizonte.
+                </p>
+              </div>
+              <div
+                class="flex items-start gap-4 bg-white/10 border border-white/15 backdrop-blur-sm rounded-2xl px-6 py-5 w-full md:w-[calc(50%-0.5rem)]"
+              >
+                <svg
+                  xmlns="http://www.w3.org/2000/svg"
+                  width="24"
+                  height="24"
+                  viewBox="0 0 24 24"
+                  fill="none"
+                  stroke="currentColor"
+                  stroke-width="2"
+                  stroke-linecap="round"
+                  stroke-linejoin="round"
+                  class="lucide lucide-circle-check w-5 h-5 text-white shrink-0 mt-0.5"
+                  aria-hidden="true"
+                >
+                  <circle cx="12" cy="12" r="10"></circle>
+                  <path d="m9 12 2 2 4-4"></path>
+                </svg>
+                <p class="text-base font-medium">
+                  Descubrir por qué ordenar tu patrimonio puede ser mucho más
+                  simple cuando lo haces con guía.
+                </p>
+              </div>
+            </div>
+            <div class="mt-14">
+              <a href="#registro" class="cta-pill text-lg"
+                >Regístrate y aprende a invertir con más inteligencia<svg
+                  xmlns="http://www.w3.org/2000/svg"
+                  width="24"
+                  height="24"
+                  viewBox="0 0 24 24"
+                  fill="none"
+                  stroke="currentColor"
+                  stroke-width="2"
+                  stroke-linecap="round"
+                  stroke-linejoin="round"
+                  class="lucide lucide-arrow-right w-5 h-5"
+                  aria-hidden="true"
+                >
+                  <path d="M5 12h14"></path>
+                  <path d="m12 5 7 7-7 7"></path></svg
+              ></a>
+            </div>
+          </div>
+        </section>
+        <section
+          class="bg-white text-[#333] px-6 md:px-12 lg:px-20 py-24 md:py-32"
+        >
+          <div class="max-w-5xl mx-auto">
+            <div class="overflow-hidden pb-4 -mb-4">
+              <div
+                class="font-extrabold text-4xl md:text-6xl tracking-tighter text-[#E86A10] text-center mb-16"
+              >
+                Este webinar es para ti si…
+              </div>
+            </div>
+            <div class="grid grid-cols-1 lg:grid-cols-2 gap-8">
+              <div class="bg-[#f5f5f5] rounded-3xl p-10">
+                <h3
+                  class="font-extrabold text-2xl text-[#E86A10] mb-8 flex items-center gap-3"
+                >
+                  <svg
+                    xmlns="http://www.w3.org/2000/svg"
+                    width="24"
+                    height="24"
+                    viewBox="0 0 24 24"
+                    fill="none"
+                    stroke="currentColor"
+                    stroke-width="2"
+                    stroke-linecap="round"
+                    stroke-linejoin="round"
+                    class="lucide lucide-circle-check w-7 h-7"
+                    aria-hidden="true"
+                  >
+                    <circle cx="12" cy="12" r="10"></circle>
+                    <path d="m9 12 2 2 4-4"></path>
+                  </svg>
+                  Sí es para ti
+                </h3>
+                <div class="flex flex-col gap-4">
+                  <div class="flex items-start gap-3">
+                    <svg
+                      xmlns="http://www.w3.org/2000/svg"
+                      width="24"
+                      height="24"
+                      viewBox="0 0 24 24"
+                      fill="none"
+                      stroke="currentColor"
+                      stroke-width="2"
+                      stroke-linecap="round"
+                      stroke-linejoin="round"
+                      class="lucide lucide-circle-check w-5 h-5 text-[#E86A10] shrink-0 mt-0.5"
+                      aria-hidden="true"
+                    >
+                      <circle cx="12" cy="12" r="10"></circle>
+                      <path d="m9 12 2 2 4-4"></path>
+                    </svg>
+                    <p class="text-base font-medium text-[#444]">
+                      Quieres invertir con inteligencia, pero sin sentir que
+                      necesitas una maestría en finanzas.
+                    </p>
+                  </div>
+                  <div class="flex items-start gap-3">
+                    <svg
+                      xmlns="http://www.w3.org/2000/svg"
+                      width="24"
+                      height="24"
+                      viewBox="0 0 24 24"
+                      fill="none"
+                      stroke="currentColor"
+                      stroke-width="2"
+                      stroke-linecap="round"
+                      stroke-linejoin="round"
+                      class="lucide lucide-circle-check w-5 h-5 text-[#E86A10] shrink-0 mt-0.5"
+                      aria-hidden="true"
+                    >
+                      <circle cx="12" cy="12" r="10"></circle>
+                      <path d="m9 12 2 2 4-4"></path>
+                    </svg>
+                    <p class="text-base font-medium text-[#444]">
+                      Ya tienes dinero ahorrado o invertido, pero no una
+                      estrategia patrimonial clara.
+                    </p>
+                  </div>
+                  <div class="flex items-start gap-3">
+                    <svg
+                      xmlns="http://www.w3.org/2000/svg"
+                      width="24"
+                      height="24"
+                      viewBox="0 0 24 24"
+                      fill="none"
+                      stroke="currentColor"
+                      stroke-width="2"
+                      stroke-linecap="round"
+                      stroke-linejoin="round"
+                      class="lucide lucide-circle-check w-5 h-5 text-[#E86A10] shrink-0 mt-0.5"
+                      aria-hidden="true"
+                    >
+                      <circle cx="12" cy="12" r="10"></circle>
+                      <path d="m9 12 2 2 4-4"></path>
+                    </svg>
+                    <p class="text-base font-medium text-[#444]">
+                      Estás buscando opciones más ordenadas y menos improvisadas
+                      para tu dinero.
+                    </p>
+                  </div>
+                  <div class="flex items-start gap-3">
+                    <svg
+                      xmlns="http://www.w3.org/2000/svg"
+                      width="24"
+                      height="24"
+                      viewBox="0 0 24 24"
+                      fill="none"
+                      stroke="currentColor"
+                      stroke-width="2"
+                      stroke-linecap="round"
+                      stroke-linejoin="round"
+                      class="lucide lucide-circle-check w-5 h-5 text-[#E86A10] shrink-0 mt-0.5"
+                      aria-hidden="true"
+                    >
+                      <circle cx="12" cy="12" r="10"></circle>
+                      <path d="m9 12 2 2 4-4"></path>
+                    </svg>
+                    <p class="text-base font-medium text-[#444]">
+                      Quieres entender cómo tomar mejores decisiones antes de
+                      mover tu patrimonio.
+                    </p>
+                  </div>
+                </div>
+              </div>
+              <div class="bg-[#111] text-white rounded-3xl p-10">
+                <h3
+                  class="font-extrabold text-2xl text-white/70 mb-8 flex items-center gap-3"
+                >
+                  <svg
+                    xmlns="http://www.w3.org/2000/svg"
+                    width="24"
+                    height="24"
+                    viewBox="0 0 24 24"
+                    fill="none"
+                    stroke="currentColor"
+                    stroke-width="2"
+                    stroke-linecap="round"
+                    stroke-linejoin="round"
+                    class="lucide lucide-circle-x w-7 h-7"
+                    aria-hidden="true"
+                  >
+                    <circle cx="12" cy="12" r="10"></circle>
+                    <path d="m15 9-6 6"></path>
+                    <path d="m9 9 6 6"></path>
+                  </svg>
+                  Este webinar no es para ti si…
+                </h3>
+                <div class="flex flex-col gap-4">
+                  <div class="flex items-start gap-3">
+                    <svg
+                      xmlns="http://www.w3.org/2000/svg"
+                      width="24"
+                      height="24"
+                      viewBox="0 0 24 24"
+                      fill="none"
+                      stroke="currentColor"
+                      stroke-width="2"
+                      stroke-linecap="round"
+                      stroke-linejoin="round"
+                      class="lucide lucide-circle-x w-5 h-5 text-white/40 shrink-0 mt-0.5"
+                      aria-hidden="true"
+                    >
+                      <circle cx="12" cy="12" r="10"></circle>
+                      <path d="m15 9-6 6"></path>
+                      <path d="m9 9 6 6"></path>
+                    </svg>
+                    <p class="text-base font-medium text-white/60">
+                      Buscas fórmulas mágicas o promesas rápidas.
+                    </p>
+                  </div>
+                  <div class="flex items-start gap-3">
+                    <svg
+                      xmlns="http://www.w3.org/2000/svg"
+                      width="24"
+                      height="24"
+                      viewBox="0 0 24 24"
+                      fill="none"
+                      stroke="currentColor"
+                      stroke-width="2"
+                      stroke-linecap="round"
+                      stroke-linejoin="round"
+                      class="lucide lucide-circle-x w-5 h-5 text-white/40 shrink-0 mt-0.5"
+                      aria-hidden="true"
+                    >
+                      <circle cx="12" cy="12" r="10"></circle>
+                      <path d="m15 9-6 6"></path>
+                      <path d="m9 9 6 6"></path>
+                    </svg>
+                    <p class="text-base font-medium text-white/60">
+                      Solo quieres seguir invirtiendo sin estrategia y "a ver
+                      qué pasa".
+                    </p>
+                  </div>
+                  <div class="flex items-start gap-3">
+                    <svg
+                      xmlns="http://www.w3.org/2000/svg"
+                      width="24"
+                      height="24"
+                      viewBox="0 0 24 24"
+                      fill="none"
+                      stroke="currentColor"
+                      stroke-width="2"
+                      stroke-linecap="round"
+                      stroke-linejoin="round"
+                      class="lucide lucide-circle-x w-5 h-5 text-white/40 shrink-0 mt-0.5"
+                      aria-hidden="true"
+                    >
+                      <circle cx="12" cy="12" r="10"></circle>
+                      <path d="m15 9-6 6"></path>
+                      <path d="m9 9 6 6"></path>
+                    </svg>
+                    <p class="text-base font-medium text-white/60">
+                      No te interesa construir un patrimonio con visión de
+                      futuro.
+                    </p>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </section>
+        <section
+          class="bg-brand-gradient-dark px-6 md:px-12 lg:px-20 py-24 md:py-32 relative grain"
+        >
+          <div class="max-w-5xl mx-auto">
+            <div class="overflow-hidden pb-4 -mb-4">
+              <div
+                class="font-extrabold text-4xl md:text-6xl tracking-tighter text-white text-center mb-16"
+              >
+                Lo que te vas a llevar de esta sesión
+              </div>
+            </div>
+            <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-5">
+              <div
+                class="bg-white/10 border border-white/15 backdrop-blur-sm rounded-2xl p-8 hover:bg-white/15 transition-colors flex flex-col gap-3"
+              >
+                <div
+                  class="w-10 h-10 rounded-full bg-white/20 flex items-center justify-center text-white font-extrabold text-lg"
+                >
+                  1
+                </div>
+                <h4 class="font-extrabold text-xl text-white">Más claridad</h4>
+                <p class="text-sm text-white/75 leading-relaxed font-medium">
+                  Entenderás cómo se construye una estrategia patrimonial sin
+                  depender de tecnicismos innecesarios.
+                </p>
+              </div>
+              <div
+                class="bg-white/10 border border-white/15 backdrop-blur-sm rounded-2xl p-8 hover:bg-white/15 transition-colors flex flex-col gap-3"
+              >
+                <div
+                  class="w-10 h-10 rounded-full bg-white/20 flex items-center justify-center text-white font-extrabold text-lg"
+                >
+                  2
+                </div>
+                <h4 class="font-extrabold text-xl text-white">
+                  Mejor criterio
+                </h4>
+                <p class="text-sm text-white/75 leading-relaxed font-medium">
+                  Aprenderás a distinguir entre tener productos sueltos y tener
+                  una estrategia real.
+                </p>
+              </div>
+              <div
+                class="bg-white/10 border border-white/15 backdrop-blur-sm rounded-2xl p-8 hover:bg-white/15 transition-colors flex flex-col gap-3"
+              >
+                <div
+                  class="w-10 h-10 rounded-full bg-white/20 flex items-center justify-center text-white font-extrabold text-lg"
+                >
+                  3
+                </div>
+                <h4 class="font-extrabold text-xl text-white">Más orden</h4>
+                <p class="text-sm text-white/75 leading-relaxed font-medium">
+                  Verás cómo alinear tus decisiones financieras con objetivos
+                  concretos y horizontes claros.
+                </p>
+              </div>
+              <div
+                class="bg-white/10 border border-white/15 backdrop-blur-sm rounded-2xl p-8 hover:bg-white/15 transition-colors flex flex-col gap-3"
+              >
+                <div
+                  class="w-10 h-10 rounded-full bg-white/20 flex items-center justify-center text-white font-extrabold text-lg"
+                >
+                  4
+                </div>
+                <h4 class="font-extrabold text-xl text-white">
+                  Perspectiva patrimonial
+                </h4>
+                <p class="text-sm text-white/75 leading-relaxed font-medium">
+                  Conocerás una forma más integral de ver tu dinero, más allá de
+                  solo ahorrar o invertir por separado.
+                </p>
+              </div>
+              <div
+                class="bg-white/10 border border-white/15 backdrop-blur-sm rounded-2xl p-8 hover:bg-white/15 transition-colors flex flex-col gap-3"
+              >
+                <div
+                  class="w-10 h-10 rounded-full bg-white/20 flex items-center justify-center text-white font-extrabold text-lg"
+                >
+                  5
+                </div>
+                <h4 class="font-extrabold text-xl text-white">
+                  Educación práctica
+                </h4>
+                <p class="text-sm text-white/75 leading-relaxed font-medium">
+                  Te llevarás aprendizajes útiles para tomar decisiones más
+                  inteligentes desde hoy.
+                </p>
+              </div>
+              <div
+                class="bg-white/10 border border-white/15 backdrop-blur-sm rounded-2xl p-8 hover:bg-white/15 transition-colors flex flex-col gap-3"
+              >
+                <div
+                  class="w-10 h-10 rounded-full bg-white/20 flex items-center justify-center text-white font-extrabold text-lg"
+                >
+                  6
+                </div>
+                <h4 class="font-extrabold text-xl text-white">Guía experta</h4>
+                <p class="text-sm text-white/75 leading-relaxed font-medium">
+                  Escucharás de primera mano la visión de Juan Carlos Pelayo,
+                  CEO de Fóndika, sobre cómo ordenar el patrimonio con
+                  estrategia.
+                </p>
+              </div>
+            </div>
+          </div>
+        </section>
+        <section
+          class="bg-white text-[#333] px-6 md:px-12 lg:px-20 py-24 md:py-32 overflow-hidden"
+        >
+          <div
+            class="max-w-7xl mx-auto flex flex-col lg:flex-row gap-16 items-center"
+          >
+            <div class="lg:w-[400px] xl:w-[460px] shrink-0 self-stretch">
+              <div
+                class="rounded-3xl overflow-hidden shadow-2xl h-[500px] lg:h-full min-h-[420px]"
+              >
+                <img
+                  alt="Ejecutiva satisfecha por lo que aprenderá en el webinar"
+                  class="w-full h-full object-cover object-top"
+                  src="images/webinar-woman.png"
+                />
+              </div>
+            </div>
+            <div class="flex-1 min-w-0">
+              <div class="overflow-hidden pb-4 -mb-4">
+                <div
+                  class="font-extrabold text-4xl md:text-6xl tracking-tighter text-[#E86A10] leading-[1.1]"
+                >
+                  Tu patrimonio merece más que decisiones aisladas
+                </div>
+              </div>
+              <div class="mt-8 text-xl text-[#555] font-medium leading-relaxed">
+                Acompáñanos este <strong>23 de junio</strong> en una sesión en
+                vivo para entender cómo construir una estrategia patrimonial con
+                más claridad.
+              </div>
+              <div class="mt-6 text-lg text-[#666] font-medium">
+                Si hoy sientes que tu dinero está repartido, pero no
+                necesariamente bien estructurado, este webinar te ayudará a ver
+                el siguiente paso con inteligencia.
+              </div>
+              <div class="mt-8">
+                <span
+                  class="inline-block bg-[#f5f5f5] border border-[#e0e0e0] text-[#E86A10] text-sm font-bold uppercase tracking-widest px-5 py-2.5 rounded-full"
+                  >Acceso sujeto a registro previo · Cupo limitado</span
+                >
+              </div>
+              <div class="mt-10">
+                <a
+                  href="#registro"
+                  class="cta-pill bg-[#E86A10] text-white text-xl"
+                  >Aparta tu lugar hoy<svg
+                    xmlns="http://www.w3.org/2000/svg"
+                    width="24"
+                    height="24"
+                    viewBox="0 0 24 24"
+                    fill="none"
+                    stroke="currentColor"
+                    stroke-width="2"
+                    stroke-linecap="round"
+                    stroke-linejoin="round"
+                    class="lucide lucide-arrow-right w-6 h-6"
+                    aria-hidden="true"
+                  >
+                    <path d="M5 12h14"></path>
+                    <path d="m12 5 7 7-7 7"></path></svg
+                ></a>
+              </div>
+            </div>
+          </div>
+        </section>
+        <section
+          id="registro"
+          class="bg-brand-gradient px-6 md:px-12 lg:px-20 py-24 md:py-32 relative grain"
+        >
+          <div
+            class="max-w-7xl mx-auto flex flex-col lg:flex-row gap-16 items-center"
+          >
+            <div class="w-full lg:w-1/2">
+              <div class="overflow-hidden pb-4 -mb-4">
+                <div
+                  class="text-[clamp(2rem,4vw,4rem)] font-extrabold tracking-tighter leading-[1.1]"
+                >
+                  Regístrate al webinar y empieza a ordenar tu patrimonio con
+                  más inteligencia
+                </div>
+              </div>
+              <div
+                class="mt-8 text-lg md:text-xl font-medium opacity-90 leading-relaxed"
+              >
+                Aprende por qué una estrategia patrimonial no empieza con
+                productos, sino con objetivos, perfil y horizonte. Una sesión
+                pensada para ayudarte a entender más, decidir mejor y avanzar
+                con claridad.
+              </div>
+              <div class="mt-8 flex flex-col items-start gap-4">
+                <div
+                  class="flex items-center gap-3 bg-white/15 border border-white/20 backdrop-blur-sm rounded-full px-6 py-3 text-white/90 font-medium"
+                >
+                  <svg
+                    xmlns="http://www.w3.org/2000/svg"
+                    width="24"
+                    height="24"
+                    viewBox="0 0 24 24"
+                    fill="none"
+                    stroke="currentColor"
+                    stroke-width="2"
+                    stroke-linecap="round"
+                    stroke-linejoin="round"
+                    class="lucide lucide-calendar w-5 h-5 shrink-0"
+                    aria-hidden="true"
+                  >
+                    <path d="M8 2v4"></path>
+                    <path d="M16 2v4"></path>
+                    <rect width="18" height="18" x="3" y="4" rx="2"></rect>
+                    <path d="M3 10h18"></path></svg
+                  >Fecha: 23 de junio
+                </div>
+                <div
+                  class="flex items-center gap-3 bg-white/15 border border-white/20 backdrop-blur-sm rounded-full px-6 py-3 text-white/90 font-medium"
+                >
+                  <svg
+                    xmlns="http://www.w3.org/2000/svg"
+                    width="24"
+                    height="24"
+                    viewBox="0 0 24 24"
+                    fill="none"
+                    stroke="currentColor"
+                    stroke-width="2"
+                    stroke-linecap="round"
+                    stroke-linejoin="round"
+                    class="lucide lucide-monitor w-5 h-5 shrink-0"
+                    aria-hidden="true"
+                  >
+                    <rect width="20" height="14" x="2" y="3" rx="2"></rect>
+                    <line x1="8" x2="16" y1="21" y2="21"></line>
+                    <line x1="12" x2="12" y1="17" y2="21"></line></svg
+                  >Modalidad: Online · En vivo
+                </div>
+                <div
+                  class="flex items-center gap-3 bg-white/15 border border-white/20 backdrop-blur-sm rounded-full px-6 py-3 text-white/90 font-medium"
+                >
+                  <svg
+                    xmlns="http://www.w3.org/2000/svg"
+                    width="24"
+                    height="24"
+                    viewBox="0 0 24 24"
+                    fill="none"
+                    stroke="currentColor"
+                    stroke-width="2"
+                    stroke-linecap="round"
+                    stroke-linejoin="round"
+                    class="lucide lucide-clock w-5 h-5 shrink-0"
+                    aria-hidden="true"
+                  >
+                    <path d="M12 6v6l4 2"></path>
+                    <circle cx="12" cy="12" r="10"></circle></svg
+                  >Hora: Por confirmar
+                </div>
+                <div
+                  class="flex items-center gap-3 bg-white/15 border border-white/20 backdrop-blur-sm rounded-full px-6 py-3 text-white/90 font-medium"
+                >
+                  <svg
+                    xmlns="http://www.w3.org/2000/svg"
+                    width="24"
+                    height="24"
+                    viewBox="0 0 24 24"
+                    fill="none"
+                    stroke="currentColor"
+                    stroke-width="2"
+                    stroke-linecap="round"
+                    stroke-linejoin="round"
+                    class="lucide lucide-timer w-5 h-5 shrink-0"
+                    aria-hidden="true"
+                  >
+                    <line x1="10" x2="14" y1="2" y2="2"></line>
+                    <line x1="12" x2="15" y1="14" y2="11"></line>
+                    <circle cx="12" cy="14" r="8"></circle></svg
+                  >Duración: Por confirmar
+                </div>
+              </div>
+            </div>
+            <div class="w-full lg:w-1/2">
+              <div class="rounded-3xl p-2 md:p-4">
+                <div
+                  id="hubspot-form-container-webinar"
+                  class="hubspot-form-wrapper"
+                >
+                  <div
+                    class="hs-form-frame"
+                    data-region="na1"
+                    data-form-id="86ba9841-d3e5-4a2a-8a3a-a01585ccfa4e"
+                    data-portal-id="49312225"
+                  >
+                    <iframe
+                      src="http://js.hsforms.net/ui-forms-embed-components-app/frame.html?_hsPortalId=49312225&amp;_hsFormId=86ba9841-d3e5-4a2a-8a3a-a01585ccfa4e&amp;_hsIsQa=false&amp;_hsHublet=na1&amp;_hsDisableScriptloader=true&amp;_hsDisableRedirect=true&amp;_hsInstanceId=a3f2fdd3-0ca4-4117-8328-0d1070c36a15"
+                      data-test-id="embedded-form-86ba9841-d3e5-4a2a-8a3a-a01585ccfa4e"
+                      title="Form"
+                      scrolling="no"
+                      allowtransparency="true"
+                    ></iframe>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </section>
+        <footer
+          class="bg-white text-[#E86A10] py-24 px-6 md:px-20 rounded-t-[3rem] md:rounded-t-[6rem]"
+        >
+          <div class="max-w-7xl mx-auto">
+            <div class="flex flex-col lg:flex-row gap-16 mb-20">
+              <div class="flex-1 flex flex-col gap-6">
+                <img
+                  alt="FÓNDIKA"
+                  class="h-[45px] w-auto self-start object-contain"
+                  src="images/fondika-logo-orange.png"
+                />
+                <div class="text-sm text-[#555] leading-relaxed space-y-4">
+                  <div>
+                    <p class="font-bold text-[#E86A10]">
+                      OFICIOS Y AUTORIZACIONES:
+                    </p>
+                    <p>
+                      <span class="font-bold">FÓNDIKA</span> está autorizada y
+                      regulada por la CNBV según oficio DGA-474-1674 del 25 de
+                      abril de 2003 para la Distribución Integral de Acciones de
+                      Sociedades de Inversión.
+                    </p>
+                    <p class="mt-1">
+                      Para mayor información consultar:
+                      <a
+                        href="http://www.condusef.gob.mx"
+                        target="_blank"
+                        rel="noopener noreferrer"
+                        class="underline"
+                        >www.condusef.gob.mx</a
+                      >
+                      ·
+                      <a
+                        href="http://www.gob.mx/cnbv"
+                        target="_blank"
+                        rel="noopener noreferrer"
+                        class="underline"
+                        >www.gob.mx/cnbv</a
+                      >
+                    </p>
+                  </div>
+                  <div>
+                    <p class="font-bold text-[#E86A10]">
+                      CAP (CENTRO DE ATENCIÓN PATRIMONIAL)
+                    </p>
+                    <p>Llámanos: 55 3093 3300</p>
+                    <p>Escríbenos: atencion.clientes@fondika.com</p>
+                    <p>
+                      Visítanos: Lago Zurich No. 245, Torre II Piso 14-B, Col.
+                      Ampliación Granada, Alcaldía Miguel Hidalgo C.P. 11529,
+                      CDMX
+                    </p>
+                  </div>
+                  <div class="flex gap-6 pt-4">
+                    <a
+                      href="https://www.facebook.com/share/1ERbPuYeda/?mibextid=wwXIfr"
+                      target="_blank"
+                      rel="noopener noreferrer"
+                      class="hover:opacity-70 transition-opacity"
+                      ><svg
+                        xmlns="http://www.w3.org/2000/svg"
+                        width="24"
+                        height="24"
+                        viewBox="0 0 24 24"
+                        fill="none"
+                        stroke="currentColor"
+                        stroke-width="2"
+                        stroke-linecap="round"
+                        stroke-linejoin="round"
+                        class="lucide lucide-facebook w-7 h-7"
+                        aria-hidden="true"
+                      >
+                        <path
+                          d="M18 2h-3a5 5 0 0 0-5 5v3H7v4h3v8h4v-8h3l1-4h-4V7a1 1 0 0 1 1-1h3z"
+                        ></path></svg></a
+                    ><a
+                      href="https://www.instagram.com/fondikamx/?igsh=cjhkb3A3bDM3NGd1"
+                      target="_blank"
+                      rel="noopener noreferrer"
+                      class="hover:opacity-70 transition-opacity"
+                      ><svg
+                        xmlns="http://www.w3.org/2000/svg"
+                        width="24"
+                        height="24"
+                        viewBox="0 0 24 24"
+                        fill="none"
+                        stroke="currentColor"
+                        stroke-width="2"
+                        stroke-linecap="round"
+                        stroke-linejoin="round"
+                        class="lucide lucide-instagram w-7 h-7"
+                        aria-hidden="true"
+                      >
+                        <rect
+                          width="20"
+                          height="20"
+                          x="2"
+                          y="2"
+                          rx="5"
+                          ry="5"
+                        ></rect>
+                        <path
+                          d="M16 11.37A4 4 0 1 1 12.63 8 4 4 0 0 1 16 11.37z"
+                        ></path>
+                        <line
+                          x1="17.5"
+                          x2="17.51"
+                          y1="6.5"
+                          y2="6.5"
+                        ></line></svg></a
+                    ><a
+                      href="https://www.linkedin.com/company/fondika-distribuidora-de-fondos-de-inversion/"
+                      target="_blank"
+                      rel="noopener noreferrer"
+                      class="hover:opacity-70 transition-opacity"
+                      ><svg
+                        xmlns="http://www.w3.org/2000/svg"
+                        width="24"
+                        height="24"
+                        viewBox="0 0 24 24"
+                        fill="none"
+                        stroke="currentColor"
+                        stroke-width="2"
+                        stroke-linecap="round"
+                        stroke-linejoin="round"
+                        class="lucide lucide-linkedin w-7 h-7"
+                        aria-hidden="true"
+                      >
+                        <path
+                          d="M16 8a6 6 0 0 1 6 6v7h-4v-7a2 2 0 0 0-2-2 2 2 0 0 0-2 2v7h-4v-7a6 6 0 0 1 6-6z"
+                        ></path>
+                        <rect width="4" height="12" x="2" y="9"></rect>
+                        <circle cx="4" cy="4" r="2"></circle></svg></a
+                    ><a
+                      href="https://www.youtube.com/channel/UCjY_YFs1DEXD0bYxw6IFUhA/videos?view=0&amp;sort=dd&amp;shelf_id=0"
+                      target="_blank"
+                      rel="noopener noreferrer"
+                      class="hover:opacity-70 transition-opacity"
+                      ><svg
+                        xmlns="http://www.w3.org/2000/svg"
+                        width="24"
+                        height="24"
+                        viewBox="0 0 24 24"
+                        fill="none"
+                        stroke="currentColor"
+                        stroke-width="2"
+                        stroke-linecap="round"
+                        stroke-linejoin="round"
+                        class="lucide lucide-youtube w-7 h-7"
+                        aria-hidden="true"
+                      >
+                        <path
+                          d="M2.5 17a24.12 24.12 0 0 1 0-10 2 2 0 0 1 1.4-1.4 49.56 49.56 0 0 1 16.2 0A2 2 0 0 1 21.5 7a24.12 24.12 0 0 1 0 10 2 2 0 0 1-1.4 1.4 49.55 49.55 0 0 1-16.2 0A2 2 0 0 1 2.5 17"
+                        ></path>
+                        <path d="m10 15 5-3-5-3z"></path></svg
+                    ></a>
+                  </div>
+                </div>
+              </div>
+              <div class="flex-1 flex flex-col gap-12">
+                <div class="flex flex-col md:flex-row gap-8">
+                  <div class="flex-1 flex flex-col gap-2">
+                    <a
+                      href="https://www.fondika.com.mx/Avisos"
+                      target="_blank"
+                      rel="noopener noreferrer"
+                      class="font-bold text-sm hover:opacity-70 transition-opacity py-1"
+                      >Avisos</a
+                    ><a
+                      href="https://www.fondika.com.mx/solicita_informacion"
+                      target="_blank"
+                      rel="noopener noreferrer"
+                      class="font-bold text-sm hover:opacity-70 transition-opacity py-1"
+                      >Quiero Información</a
+                    ><a
+                      href="https://www.fondika.com.mx/guia_servicios"
+                      target="_blank"
+                      rel="noopener noreferrer"
+                      class="font-bold text-sm hover:opacity-70 transition-opacity py-1"
+                      >Guía de Servicios de Inversión</a
+                    ><a
+                      href="https://www.fondika.com.mx/mapa_sitio"
+                      target="_blank"
+                      rel="noopener noreferrer"
+                      class="font-bold text-sm hover:opacity-70 transition-opacity py-1"
+                      >Mapa de Sitio</a
+                    >
+                  </div>
+                  <div class="flex-1 flex flex-col gap-2">
+                    <a
+                      href="https://www.fondika.com.mx/DiasInhabiles"
+                      target="_blank"
+                      rel="noopener noreferrer"
+                      class="font-bold text-sm hover:opacity-70 transition-opacity py-1"
+                      >Días Inhábiles</a
+                    ><a
+                      href="https://www.fondika.com.mx/BolsaTrabajo"
+                      target="_blank"
+                      rel="noopener noreferrer"
+                      class="font-bold text-sm hover:opacity-70 transition-opacity py-1"
+                      >Bolsa de Trabajo</a
+                    ><a
+                      href="https://www.fondika.com.mx/informacion_financiera"
+                      target="_blank"
+                      rel="noopener noreferrer"
+                      class="font-bold text-sm hover:opacity-70 transition-opacity py-1"
+                      >Información Financiera</a
+                    >
+                  </div>
+                </div>
+                <div class="flex items-center gap-6 justify-start">
+                  <img
+                    alt="Hecho en México"
+                    class="h-16 md:h-22 lg:h-28 w-auto object-contain"
+                    src="images/hecho-en-mexico.png"
+                  /><img
+                    alt="Empresa Socialmente Responsable"
+                    class="h-20 md:h-28 lg:h-36 w-auto object-contain"
+                    src="images/esr-seal2.jpg"
+                  /><img
+                    alt="Fondika Fondos de Inversión"
+                    class="h-20 md:h-28 lg:h-36 w-auto object-contain"
+                    src="images/fondika-fondos2.jpg"
+                  />
+                </div>
+              </div>
+            </div>
+            <div class="w-full h-[2px] bg-[#E86A10]/10 mb-8"></div>
+            <div
+              class="flex flex-col md:flex-row justify-between items-center gap-4"
+            >
+              <div
+                class="text-sm font-medium opacity-60 flex flex-wrap items-center gap-x-4 gap-y-2"
+              >
+                <span>Fóndika S.A. de C.V. © 2026</span><span>·</span
+                ><a
+                  href="https://www.fondika.com.mx/TerminosCondiciones"
+                  target="_blank"
+                  rel="noopener noreferrer"
+                  class="hover:underline"
+                  >Términos y Condiciones</a
+                ><span>·</span
+                ><a
+                  href="https://www.fondika.com.mx/aviso_privacidad"
+                  target="_blank"
+                  rel="noopener noreferrer"
+                  class="hover:underline"
+                  >Aviso de Privacidad</a
+                ><span>·</span
+                ><a
+                  href="https://fa.fondika.com.mx/DOCS/PDF/Footer/Buro.pdf"
+                  target="_blank"
+                  rel="noopener noreferrer"
+                  ><img
+                    alt="Buró de Entidades Financieras"
+                    class="h-8 w-auto object-contain"
+                    src="images/buro-logo.png" /></a
+                ><span>·</span
+                ><a
+                  href="https://info.fondika.com.mx/hubfs/MKT_Assets.Presentacion_UNE.jpg"
+                  target="_blank"
+                  rel="noopener noreferrer"
+                  class="hover:underline"
+                  >UNE</a
+                >
+              </div>
+            </div>
+          </div>
+        </footer>
+      </div>
+    </div>
+  </body>
+</html>
